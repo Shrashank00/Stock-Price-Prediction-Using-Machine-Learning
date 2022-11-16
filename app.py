@@ -4,14 +4,14 @@ import matplotlib.pyplot as plt
 import pandas_datareader as data
 from keras.models import load_model
 import streamlit as st
-
+from datetime import date
 
 st.title('Stock Price Prediction')
 
 
 user_input=st.text_input('Enter Stock Ticker','GOOG')
 
-start_date=st.date_input('Pick a start date')
+start_date=st.date_input('Pick a start date',date(2015,1,1))
 end_date=st.date_input('Pick a end date')
 
 
