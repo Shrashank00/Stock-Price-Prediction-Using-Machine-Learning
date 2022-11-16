@@ -6,7 +6,7 @@ from keras.models import load_model
 import streamlit as st
 
 
-st.title('Stock Trend Prediction')
+st.title('Stock Price Prediction')
 
 
 user_input=st.text_input('Enter Stock Ticker','GOOG')
